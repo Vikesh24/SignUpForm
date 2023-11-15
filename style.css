@@ -1,0 +1,136 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  place-items: center;
+}
+
+.signup__content {
+  display: grid;
+  gap: 2rem;
+}
+
+.signup__content-paragraph {
+  font-weight: 700;
+  text-wrap: wrap;
+}
+
+.signup__content-paragraph > p {
+  padding-bottom: 1rem;
+}
+
+.signup__content-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-input {
+  display: grid;
+}
+
+.form-input > label {
+  text-transform: uppercase;
+}
+
+.form-input > input {
+  width: 75%;
+  height: 40px;
+  border: 1px solid gainsboro;
+  outline: none;
+  border-radius: 0.25em;
+  padding: 0.5rem 1rem;
+}
+
+.input:focus {
+  border: 1px solid blueviolet;
+}
+
+.signup__content-button {
+  display: grid;
+  gap: 1rem;
+}
+
+.btn {
+  width: 25%;
+  background-color: #596d48;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.login-button {
+  color: #596d48;
+  font-weight: 500;
+}
+:invalid {
+  border: 1px solid red;
+}
